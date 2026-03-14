@@ -1,0 +1,119 @@
+body {
+  font-family: Arial;
+  background: #667eea;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.container {
+  background: white;
+  padding: 40px;
+  border-radius: 12px;
+  width: 700px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+} /* SELECT LANGUAGE */
+select {
+  width: 220px;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+  background: #f8f8f8;
+  cursor: pointer;
+  transition: 0.3s;
+}
+select:hover {
+  border-color: #667eea;
+} /* FILE UPLOAD */
+input[type="file"] {
+  font-size: 14px;
+}
+input[type="file"]::file-selector-button {
+  background: #667eea;
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-right: 10px;
+  transition: 0.3s;
+}
+input[type="file"]::file-selector-button:hover {
+  background: #5563c1;
+}
+.file-upload {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin: 15px 0;
+}
+.upload-btn {
+  background: #667eea;
+  color: white;
+  padding: 10px 22px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: 0.2s;
+}
+.upload-btn:hover {
+  background: #5563c1;
+}
+#fileInput {
+  display: none;
+}
+#fileName {
+  color: #333;
+  font-size: 14px;
+} /* BUTTON */
+button {
+  background: #667eea;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  width: 150px;
+}
+button:hover {
+  background: #5563c1;
+} /* INFO */
+.info {
+  margin-top: 10px;
+} /* TRANSCRIPT */
+.transcript {
+  margin-top: 20px;
+  background: #f4f4f4;
+  padding: 15px;
+  border-radius: 8px;
+}
+.transcript h3 {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+.transcript-content {
+  white-space: pre-wrap;
+  font-family: monospace;
+  line-height: 1.6;
+  max-height: 300px;
+  overflow-y: auto;
+  background: white;
+  padding: 10px;
+  border-radius: 6px;
+  border-left: 4px solid #667eea;
+} /* LOADING */
+.loading {
+  margin-top: 10px;
+  color: #667eea;
+  font-weight: bold;
+}
